@@ -30,7 +30,7 @@ RUN python3 -m venv venv \
     && pip3 uninstall -y opencv-python \
     && pip3 install opencv-python-headless
 
-RUN git clone https://github.com/gazebosim/gz-sim/ -b jrivero/rl_python_update
+RUN git clone https://github.com/gazebosim/gz-sim/ -b main
 
 WORKDIR /opt/RL/gz-sim/examples/scripts/reinforcement_learning/simple_cart_pole
 
